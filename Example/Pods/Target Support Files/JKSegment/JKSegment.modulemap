@@ -1,0 +1,6 @@
+framework module JKSegment {
+  umbrella header "JKSegment-umbrella.h"
+
+  export *
+  module * { export * }
+}

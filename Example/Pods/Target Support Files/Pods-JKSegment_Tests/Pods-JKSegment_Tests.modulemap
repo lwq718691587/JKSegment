@@ -1,0 +1,6 @@
+framework module Pods_JKSegment_Tests {
+  umbrella header "Pods-JKSegment_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

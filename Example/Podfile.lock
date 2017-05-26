@@ -1,0 +1,16 @@
+PODS:
+  - JKSegment (0.1.0)
+
+DEPENDENCIES:
+  - JKSegment (from `../`)
+
+EXTERNAL SOURCES:
+  JKSegment:
+    :path: ../
+
+SPEC CHECKSUMS:
+  JKSegment: 9467751e92cb5d8c730c3cdfcd8f6f0769feece7
+
+PODFILE CHECKSUM: ff6904ab77dec563a0a4026668c723ca0f8c09d0
+
+COCOAPODS: 1.2.0

@@ -1,0 +1,6 @@
+use_frameworks!
+target 'JKSegment_Tests' do
+  pod 'JKSegment', :path => '../'
+  
+  
+end
