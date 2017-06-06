@@ -20,7 +20,6 @@
 #import "DLTabedSlideView.h"
 #import "DLUtility.h"
 #import "JKExample.h"
-#import "PageNViewController.h"
 
 FOUNDATION_EXPORT double JKSegmentVersionNumber;
 FOUNDATION_EXPORT const unsigned char JKSegmentVersionString[];

@@ -1,6 +1,6 @@
 {
   "name": "JKSegment",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "多页面滑动控件",
   "homepage": "https://github.com/lwq718691587/JKSegment",
   "license": {
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/lwq718691587/JKSegment.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"

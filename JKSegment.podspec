@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JKSegment'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = '多页面滑动控件'
 
   s.homepage         = 'https://github.com/lwq718691587/JKSegment'
@@ -19,4 +19,5 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'JKSegment/**/*'
+  
 end

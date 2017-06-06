@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'B70458C8C86A7B8D6BC8F75156A9554C'
+               BlueprintIdentifier = '5DC03B185A7A538D4948C80E9846F23B'
                BlueprintName = 'JKSegment'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'JKSegment.framework'>
