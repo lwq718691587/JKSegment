@@ -26,7 +26,8 @@
 @property(nonatomic,assign) CGFloat trackViewHeight;
 @property(nonatomic,assign) CGFloat trackViewBottom;
 @property(nonatomic, strong) NSArray *tabbarItems;
-
+/// 控制 线的宽度，默认为不等宽 NO
+@property (nonatomic) BOOL isLineEquelWidth;
 
 // DLSlideTabbarProtocol
 @property(nonatomic, assign) NSInteger selectedIndex;

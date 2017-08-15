@@ -35,7 +35,7 @@
 
 - (void)commonInit{
     _selectedIndex = -1;
-    
+    self.isLineEquelWidth = NO;
     scrollView_ = [[UIScrollView alloc] initWithFrame:self.bounds];
     scrollView_.showsHorizontalScrollIndicator = NO;
     [self addSubview:scrollView_];
@@ -184,40 +184,52 @@
 
 - (void)switchingFrom:(NSInteger)fromIndex to:(NSInteger)toIndex percent:(float)percent{
     //DLScrollTabbarItem *fromItem = [self.tabbarItems objectAtIndex:fromIndex];
-    UILabel *fromLabel = (UILabel *)[scrollView_ viewWithTag:kLabelTagBase+fromIndex];
-    fromLabel.textColor = [DLUtility getColorOfPercent:percent between:self.tabItemNormalColor and:self.tabItemSelectedColor];
-    
-    UILabel *toLabel = nil;
-    if (toIndex >= 0 && toIndex < [self tabbarCount]) {
-        //DLScrollTabbarItem *toItem = [self.tabbarItems objectAtIndex:toIndex];
-        toLabel = (UILabel *)[scrollView_ viewWithTag:kLabelTagBase+toIndex];
-        toLabel.textColor = [DLUtility getColorOfPercent:percent between:self.tabItemSelectedColor and:self.tabItemNormalColor];
-    }
-    
-    // 计算track view位置和宽度
-    CGRect fromRc = [scrollView_ convertRect:fromLabel.bounds fromView:fromLabel];
-    CGFloat fromWidth = fromLabel.frame.size.width;
-    CGFloat fromX = fromRc.origin.x;
-    CGFloat toX;
-    CGFloat toWidth;
-    if (toLabel) {
-        CGRect toRc = [scrollView_ convertRect:toLabel.bounds fromView:toLabel];
-        toWidth = toRc.size.width;
-        toX = toRc.origin.x;
-    }
-    else{
-        toWidth = fromWidth;
-        if (toIndex > fromIndex) {
-            toX = fromX + fromWidth;
+    if (self.isLineEquelWidth) {
+        CGFloat x = fromIndex * [[self.tabbarItems firstObject] width] + [[self.tabbarItems firstObject] width] * percent * (toIndex - fromIndex);
+        trackView_.frame = CGRectMake(x, trackView_.frame.origin.y, [[self.tabbarItems firstObject] width], CGRectGetHeight(trackView_.bounds));
+    }else{
+        UILabel *fromLabel = (UILabel *)[scrollView_ viewWithTag:kLabelTagBase+fromIndex];
+        fromLabel.textColor = [DLUtility getColorOfPercent:percent between:self.tabItemNormalColor and:self.tabItemSelectedColor];
+        
+        UILabel *toLabel = nil;
+        if (toIndex >= 0 && toIndex < [self tabbarCount]) {
+            //DLScrollTabbarItem *toItem = [self.tabbarItems objectAtIndex:toIndex];
+            toLabel = (UILabel *)[scrollView_ viewWithTag:kLabelTagBase+toIndex];
+            toLabel.textColor = [DLUtility getColorOfPercent:percent between:self.tabItemSelectedColor and:self.tabItemNormalColor];
+        }
+        
+        // 计算track view位置和宽度
+        CGRect fromRc = [scrollView_ convertRect:fromLabel.bounds fromView:fromLabel];
+        CGFloat fromWidth = fromLabel.frame.size.width;
+        CGFloat fromX = fromRc.origin.x;
+        CGFloat toX;
+        CGFloat toWidth;
+        if (toLabel) {
+            CGRect toRc = [scrollView_ convertRect:toLabel.bounds fromView:toLabel];
+            toWidth = toRc.size.width;
+            toX = toRc.origin.x;
         }
         else{
-            toX = fromX - fromWidth;
+            toWidth = fromWidth;
+            if (toIndex > fromIndex) {
+                toX = fromX + fromWidth;
+            }
+            else{
+                toX = fromX - fromWidth;
+            }
         }
+        
+        CGFloat width = toWidth * percent + fromWidth*(1-percent);
+        
+        CGFloat x = fromX + (toX - fromX)*percent;
+        
+        trackView_.frame = CGRectMake(x, trackView_.frame.origin.y, width, CGRectGetHeight(trackView_.bounds));
     }
+    
+    
 
-    CGFloat width = toWidth * percent + fromWidth*(1-percent);
-    CGFloat x = fromX + (toX - fromX)*percent;
-    trackView_.frame = CGRectMake(x, trackView_.frame.origin.y, width, CGRectGetHeight(trackView_.bounds));
+
+    
 }
 
 - (void)setSelectedIndex:(NSInteger)selectedIndex{
@@ -250,8 +262,14 @@
             [scrollView_ scrollRectToVisible:rc animated:YES];
             
             // track view
-            CGRect trackRc = [scrollView_ convertRect:toLabel.bounds fromView:toLabel];
-            trackView_.frame = CGRectMake(trackRc.origin.x, trackView_.frame.origin.y, trackRc.size.width, CGRectGetHeight(trackView_.bounds));
+            if (self.isLineEquelWidth) {
+                 trackView_.frame = CGRectMake([[self.tabbarItems firstObject] width] * selectedIndex, trackView_.frame.origin.y, [[self.tabbarItems firstObject] width], CGRectGetHeight(trackView_.bounds));
+            }else{
+                CGRect trackRc = [scrollView_ convertRect:toLabel.bounds fromView:toLabel];
+                trackView_.frame = CGRectMake(trackRc.origin.x, trackView_.frame.origin.y, trackRc.size.width, CGRectGetHeight(trackView_.bounds));
+            }
+
+
         }
         
 //        float width = self.bounds.size.width/self.tabbarItems.count;
