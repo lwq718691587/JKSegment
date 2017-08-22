@@ -16,9 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1A78B91A0C7240371E5B8F40 /* JKSegment.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JKSegment.podspec; path = ../JKSegment.podspec; sourceTree = "<group>"; };
-		2B032B98FA0559F916D0B961 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		30505A9E3ED6C6F4F0F79BFC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1A78B91A0C7240371E5B8F40 /* JKSegment.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JKSegment.podspec; path = ../JKSegment.podspec; sourceTree = "<group>"; };
+		2B032B98FA0559F916D0B961 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		30505A9E3ED6C6F4F0F79BFC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3FBFA4B64F5F1B547CADDBF3 /* Pods-JKSegment_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKSegment_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JKSegment_Tests/Pods-JKSegment_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		461BA7E95EDE4686454A5A25 /* Pods_JKSegment_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKSegment_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46A1A0EE49938606ADBE58E7 /* Pods-JKSegment_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKSegment_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JKSegment_Tests/Pods-JKSegment_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -151,6 +151,7 @@
 				ORGANIZATIONNAME = liuweiqiang;
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
+						ProvisioningStyle = Manual;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
@@ -332,6 +333,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3FBFA4B64F5F1B547CADDBF3 /* Pods-JKSegment_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -346,6 +348,7 @@
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JKSegment_Example.app/JKSegment_Example";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -355,6 +358,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 46A1A0EE49938606ADBE58E7 /* Pods-JKSegment_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -365,6 +369,7 @@
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JKSegment_Example.app/JKSegment_Example";
 				WRAPPER_EXTENSION = xctest;
 			};

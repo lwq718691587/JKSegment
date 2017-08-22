@@ -22,4 +22,14 @@
     return mid;
 }
 
++ (UIFont *)getFontOfPercent:(CGFloat)percent between:(UIFont *)font1 and:(UIFont*)font2{
+    
+    CGFloat f1 = font1.pointSize;
+    CGFloat f2 = font2.pointSize;
+    CGFloat fontSize = f1 + (f2 - f1)*percent;
+    
+    return [UIFont systemFontOfSize:fontSize];
+}
+
+
 @end

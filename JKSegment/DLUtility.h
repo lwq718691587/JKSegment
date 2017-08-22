@@ -11,4 +11,5 @@
 
 @interface DLUtility : NSObject
 + (UIColor *)getColorOfPercent:(CGFloat)percent between:(UIColor *)color1 and:(UIColor *)color2;
++ (UIFont *)getFontOfPercent:(CGFloat)percent between:(UIFont *)font1 and:(UIFont*)font2;
 @end
