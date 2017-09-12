@@ -36,6 +36,8 @@
 // cache properties
 @property(nonatomic, strong) id<DLCacheProtocol> cache;
 
+@property(nonatomic, assign) BOOL customIsSlide;//是否滑动
+
 // delegate
 @property(nonatomic, weak)IBOutlet id<DLCustomSlideViewDelegate>delegate;
 

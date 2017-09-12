@@ -22,6 +22,10 @@
     BOOL isSwitching_;
 }
 
+- (void)disablePanGestures:(BOOL)disPan{
+    pan_.enabled = disPan;
+}
+
 - (void)commonInit{
     oldIndex_ = -1;
     isSwitching_ = NO;

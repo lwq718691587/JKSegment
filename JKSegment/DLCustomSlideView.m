@@ -42,6 +42,7 @@
     slideView_.delegate = self;
     slideView_.dataSource = self;
     slideView_.baseViewController = self.baseViewController;
+    [slideView_ disablePanGestures:self.customIsSlide];
     [self addSubview:slideView_];
 }
 - (void)layoutSubviews{

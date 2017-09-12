@@ -29,5 +29,5 @@
 @property(nonatomic, weak) id<DLSlideViewDelegate>delegate;
 @property(nonatomic, weak) id<DLSlideViewDataSource>dataSource;
 - (void)switchTo:(NSInteger)index;
-
+- (void)disablePanGestures:(BOOL)disPan;
 @end
