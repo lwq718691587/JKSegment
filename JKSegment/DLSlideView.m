@@ -23,7 +23,9 @@
 }
 
 - (void)disablePanGestures:(BOOL)disPan{
-    pan_.enabled = disPan;
+    if (disPan) {
+        pan_.enabled = NO;
+    }
 }
 
 - (void)commonInit{
