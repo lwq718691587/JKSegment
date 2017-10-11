@@ -194,8 +194,8 @@
 - (void)switchingFrom:(NSInteger)fromIndex to:(NSInteger)toIndex percent:(float)percent{
     //DLScrollTabbarItem *fromItem = [self.tabbarItems objectAtIndex:fromIndex];
     if (self.isLineEquelWidth) {
-        CGFloat x = fromIndex * [[self.tabbarItems firstObject] width] + [[self.tabbarItems firstObject] width] * percent * (toIndex - fromIndex);
-        trackView_.frame = CGRectMake(x, trackView_.frame.origin.y, [[self.tabbarItems firstObject] width], CGRectGetHeight(trackView_.bounds));
+        CGFloat x = fromIndex * CGRectGetWidth([[self.tabbarItems firstObject] frame]) + CGRectGetWidth([[self.tabbarItems firstObject] frame]) * percent * (toIndex - fromIndex);
+        trackView_.frame = CGRectMake(x, trackView_.frame.origin.y, CGRectGetWidth([[self.tabbarItems firstObject] frame]), CGRectGetHeight(trackView_.bounds));
     }else{
         UILabel *fromLabel = (UILabel *)[scrollView_ viewWithTag:kLabelTagBase+fromIndex];
         fromLabel.textColor = [DLUtility getColorOfPercent:percent between:self.tabItemNormalColor and:self.tabItemSelectedColor];
@@ -321,7 +321,7 @@
             
             // track view
             if (self.isLineEquelWidth) {
-                 trackView_.frame = CGRectMake([[self.tabbarItems firstObject] width] * selectedIndex, trackView_.frame.origin.y, [[self.tabbarItems firstObject] width], CGRectGetHeight(trackView_.bounds));
+                 trackView_.frame = CGRectMake(CGRectGetWidth([[self.tabbarItems firstObject] frame]) * selectedIndex, trackView_.frame.origin.y, CGRectGetWidth([[self.tabbarItems firstObject] frame]), CGRectGetHeight(trackView_.bounds));
             }else{
                 CGRect trackRc = [scrollView_ convertRect:toLabel.bounds fromView:toLabel];
                 trackView_.frame = CGRectMake(trackRc.origin.x, trackView_.frame.origin.y, trackRc.size.width, CGRectGetHeight(trackView_.bounds));
