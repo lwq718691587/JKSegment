@@ -7,29 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		021EF2F4401A1C38D113E84BA6D9EDFD /* DLLRUCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF7678A024C7E8C938A812C66CF3733 /* DLLRUCache.m */; };
-		1814C5733EA5C1184CE5B4EA10160E15 /* JKExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F50F5716AB62DD1910FFD7D3B9DE04F /* JKExample.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2F6EA3090592D9FDFB1CB6BCC4418EB5 /* DLScrollTabbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 73BE6AD9A2931B8AAB1656C8CB1FD1DB /* DLScrollTabbarView.m */; };
-		3B57AE5A070CA59D1141B7EC5BB8201A /* DLCustomSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A069DEF9BAB8D698847DA591BB4BE9 /* DLCustomSlideView.m */; };
-		4464DDE7DA4EF1556976FF1EF560509D /* DLTabedSlideView.h in Headers */ = {isa = PBXBuildFile; fileRef = 47CA3C61AF608C8A07A1BAE0EB020BC6 /* DLTabedSlideView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0DC9A018A94867837FAC7A13D7046B26 /* DLSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF55DF455B6FCA09FF9390A1A28775F /* DLSlideView.m */; };
+		0F1A74F905D0161A47F00A802CA0B093 /* DLSlideView.h in Headers */ = {isa = PBXBuildFile; fileRef = FABC8E9A1DF27F3C6D5D66F06D223948 /* DLSlideView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D8BC43969B2D7EEA1654C7699F1F600 /* DLUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C1477EA110180196C294930C0898F5D /* DLUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27CB9783646A2630AE98FA25F38526D7 /* DLScrollTabbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1292D8FC395E74394D0A21E39E7D4D4D /* DLScrollTabbarView.m */; };
+		37DA71BF93AF5867D42C839A218CC7CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		45BD49C229564D869DFEF7890958EC20 /* JKSegment-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CFE00B83A6C07B24BB9A0ACA89D2409D /* JKSegment-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		481D50901CC7ED7C66F3BECBC5F92F63 /* DLFixedTabbarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 170D99BD53D88FB5B679D23A952C5EEE /* DLFixedTabbarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		590FB12893575B78E7F593F55A42E934 /* Pods-JKSegment_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D3E138279F4B6418B8A8987C80CB28F8 /* Pods-JKSegment_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5EBF15344574819051B13FCCB383176B /* JKSegment-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 52762EB163648277686C2108976DD9E1 /* JKSegment-dummy.m */; };
-		68BDB0DD2D71189293EABBE99FEB2CE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		6AEAFE8194C3DE13B6E739E04E5F5640 /* DLSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BA438DB6DEE392F629F1F61885060A /* DLSlideView.m */; };
-		76F9F737C66B2438463A6E60830AACC9 /* DLCustomSlideView.h in Headers */ = {isa = PBXBuildFile; fileRef = C0DC78BF2334DAFEFD44DE88F873534E /* DLCustomSlideView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66D012B57FBD10BB302D1E605EAFFCF3 /* DLCustomSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFBEB44906FA3295915B45075F0C57B4 /* DLCustomSlideView.m */; };
+		75A0E0122EF66EFCCEF56E574FDAE3CD /* DLFixedTabbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D6E9FD2152EBA6A364BACCC425F21C /* DLFixedTabbarView.m */; };
+		799338DD4AF933FF53241E3115FCB799 /* DLTabedSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB8D1B033B0F2EC0AE36CF0D0B57A15 /* DLTabedSlideView.m */; };
+		854027BCB231FC6BFA3A948095E538C1 /* DLCacheProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F6FF0814192E5E9E4AA3EB29B9A18E7 /* DLCacheProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		881B3C77CEFCC2DE987E3FE535B6ACC1 /* Pods-JKSegment_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C333B88807D05249D55AAFCE1ABAEDB /* Pods-JKSegment_Tests-dummy.m */; };
-		9B0B4A7C831F3A68B80F5FFD01CB5C92 /* DLLRUCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C765585648BE03EE0DD9BA25810B1ED /* DLLRUCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A35F10B8F97AF1D84315332C4E7C4A26 /* DLCacheProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BF9EDB3B6B20F2A4B7A13D91B80A299 /* DLCacheProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AB30398F29CF18AC14497672C4417D7D /* DLFixedTabbarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 02952D751FECB16691DFF8F78C4534BF /* DLFixedTabbarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AEDCBA46F152B991EA48EF56E2C63A8A /* DLScrollTabbarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7802CB27E3C7CA6A9C3F4E21F3ABA984 /* DLScrollTabbarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AF155A8D1BCC4C1290BA419F6F3F6DF9 /* DLUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CA870415941747BE71D90D29C9ABC5 /* DLUtility.m */; };
-		B839B19CF70ECCB0C99586F0DF64700A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		BBC1F79393E151DBB0FC96EF9A04D677 /* DLSlideTabbarProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 799782EE085CEEFCA67197C9A31F2273 /* DLSlideTabbarProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C329900843DA0A2C2A1A3D8E5931FD28 /* DLSlideView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DA5473B07A28EB9745E2D663601800F /* DLSlideView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D366E3D7B3E13DC1C2ED12822EB857D7 /* DLFixedTabbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9BAD78CAC69B0A660D4D4CDF8E0B51 /* DLFixedTabbarView.m */; };
-		DB54F98CAC599ACAD35BC2770BAD62EB /* DLTabedSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = E35DE9B02486F26F8878C8A6F1880B1B /* DLTabedSlideView.m */; };
-		E1E949B462DCE18F6ACB0E5C18FCFE6E /* DLUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 8542D9056512015D9CC7BE22B27DC172 /* DLUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E39366957BB83DB1B45F268645AFC7D5 /* JKSegment-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16566EAF46DE8ADEC92F32EB89AA9706 /* JKSegment-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		904F0C1F1DB8A564E0449815C21CCB89 /* DLLRUCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 703D6CE19324B95854C6609B721413C9 /* DLLRUCache.m */; };
+		A173E64683D700D57B76E7D0158C6DFC /* JKSegment-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9D26C4E1153D480C6D1C6A75178DDC /* JKSegment-dummy.m */; };
+		A5F2EA0B338B376AB1DF18FCFA7DC551 /* DLScrollTabbarView.h in Headers */ = {isa = PBXBuildFile; fileRef = A49022247F0F633938822AA3709ACD77 /* DLScrollTabbarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC60E7132E716E11C84222851E210D77 /* DLLRUCache.h in Headers */ = {isa = PBXBuildFile; fileRef = F06BE8C69D0FF88DA68FD727DFF66A64 /* DLLRUCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C355BBAF901BC9C97B0D611EC8A69F3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		DA234012DE2655AD71FF70E8444AA1E3 /* DLTabedSlideView.h in Headers */ = {isa = PBXBuildFile; fileRef = 605056E7F9F55E0326398519A352D522 /* DLTabedSlideView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC7B23BFEE4A222455FBD621010984B3 /* DLSlideTabbarProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 731116DF72C320A05FA987173BFE3D12 /* DLSlideTabbarProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4723E9A4576BE15061723EEC2A6E9BE /* JKExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A1931673AAEE78ABBFC6A6C900B595E /* JKExample.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDCAB218E94BDE0FED0D6AD718824131 /* DLUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 5875C4D239CC8C3B4E853BDC471733A2 /* DLUtility.m */; };
+		FDEDA32578F876EEBB5496DE08171307 /* DLCustomSlideView.h in Headers */ = {isa = PBXBuildFile; fileRef = E96E52FE9ABBDA41FDD58424563D8C68 /* DLCustomSlideView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,43 +43,43 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02952D751FECB16691DFF8F78C4534BF /* DLFixedTabbarView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DLFixedTabbarView.h; sourceTree = "<group>"; };
-		0F50F5716AB62DD1910FFD7D3B9DE04F /* JKExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JKExample.h; sourceTree = "<group>"; };
-		16566EAF46DE8ADEC92F32EB89AA9706 /* JKSegment-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JKSegment-umbrella.h"; sourceTree = "<group>"; };
-		1DA5473B07A28EB9745E2D663601800F /* DLSlideView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DLSlideView.h; sourceTree = "<group>"; };
-		2CF7678A024C7E8C938A812C66CF3733 /* DLLRUCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DLLRUCache.m; sourceTree = "<group>"; };
-		47CA3C61AF608C8A07A1BAE0EB020BC6 /* DLTabedSlideView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DLTabedSlideView.h; sourceTree = "<group>"; };
+		0A89E5E90DD24A7891B66A74B39D2903 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1292D8FC395E74394D0A21E39E7D4D4D /* DLScrollTabbarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DLScrollTabbarView.m; path = JKSegment/DLScrollTabbarView.m; sourceTree = "<group>"; };
+		170D99BD53D88FB5B679D23A952C5EEE /* DLFixedTabbarView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DLFixedTabbarView.h; path = JKSegment/DLFixedTabbarView.h; sourceTree = "<group>"; };
+		2EF83303801F06E43AFCF920B49CFAC5 /* JKSegment.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = JKSegment.modulemap; sourceTree = "<group>"; };
+		3FF55DF455B6FCA09FF9390A1A28775F /* DLSlideView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DLSlideView.m; path = JKSegment/DLSlideView.m; sourceTree = "<group>"; };
+		4A1931673AAEE78ABBFC6A6C900B595E /* JKExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JKExample.h; path = JKSegment/JKExample.h; sourceTree = "<group>"; };
 		4A67CE2C26E7145787ACAEB59C29F5AE /* Pods-JKSegment_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKSegment_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		4BF9EDB3B6B20F2A4B7A13D91B80A299 /* DLCacheProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DLCacheProtocol.h; sourceTree = "<group>"; };
-		52762EB163648277686C2108976DD9E1 /* JKSegment-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JKSegment-dummy.m"; sourceTree = "<group>"; };
+		4C1477EA110180196C294930C0898F5D /* DLUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DLUtility.h; path = JKSegment/DLUtility.h; sourceTree = "<group>"; };
 		5376198476F652FB6D447BA1E517AF43 /* Pods-JKSegment_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JKSegment_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5875C4D239CC8C3B4E853BDC471733A2 /* DLUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DLUtility.m; path = JKSegment/DLUtility.m; sourceTree = "<group>"; };
 		5F947FC34C6DA67C7D70B9AD8287D55E /* Pods-JKSegment_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JKSegment_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		65BA438DB6DEE392F629F1F61885060A /* DLSlideView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DLSlideView.m; sourceTree = "<group>"; };
-		6831C4869AC5AEBDE9734273E4926661 /* JKSegment-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JKSegment-prefix.pch"; sourceTree = "<group>"; };
-		6C765585648BE03EE0DD9BA25810B1ED /* DLLRUCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DLLRUCache.h; sourceTree = "<group>"; };
-		6E87B717E3F375F8A0A099D098690115 /* JKSegment.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JKSegment.xcconfig; sourceTree = "<group>"; };
-		73BE6AD9A2931B8AAB1656C8CB1FD1DB /* DLScrollTabbarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DLScrollTabbarView.m; sourceTree = "<group>"; };
-		7802CB27E3C7CA6A9C3F4E21F3ABA984 /* DLScrollTabbarView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DLScrollTabbarView.h; sourceTree = "<group>"; };
-		799782EE085CEEFCA67197C9A31F2273 /* DLSlideTabbarProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DLSlideTabbarProtocol.h; sourceTree = "<group>"; };
+		605056E7F9F55E0326398519A352D522 /* DLTabedSlideView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DLTabedSlideView.h; path = JKSegment/DLTabedSlideView.h; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		703D6CE19324B95854C6609B721413C9 /* DLLRUCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DLLRUCache.m; path = JKSegment/DLLRUCache.m; sourceTree = "<group>"; };
+		731116DF72C320A05FA987173BFE3D12 /* DLSlideTabbarProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DLSlideTabbarProtocol.h; path = JKSegment/DLSlideTabbarProtocol.h; sourceTree = "<group>"; };
+		7BBF312551CC2156D464AFDCE2D1B21D /* JKSegment-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JKSegment-prefix.pch"; sourceTree = "<group>"; };
 		7C333B88807D05249D55AAFCE1ABAEDB /* Pods-JKSegment_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JKSegment_Tests-dummy.m"; sourceTree = "<group>"; };
-		8542D9056512015D9CC7BE22B27DC172 /* DLUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DLUtility.h; sourceTree = "<group>"; };
+		8027FF36E36B396D74998605A6579D0B /* JKSegment.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JKSegment.xcconfig; sourceTree = "<group>"; };
 		904E167619136298F7983C7FC1E7C849 /* Pods-JKSegment_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JKSegment_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F6FF0814192E5E9E4AA3EB29B9A18E7 /* DLCacheProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DLCacheProtocol.h; path = JKSegment/DLCacheProtocol.h; sourceTree = "<group>"; };
+		A49022247F0F633938822AA3709ACD77 /* DLScrollTabbarView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DLScrollTabbarView.h; path = JKSegment/DLScrollTabbarView.h; sourceTree = "<group>"; };
 		A4E22CE114505C86AA7944A88425C0A3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A5A069DEF9BAB8D698847DA591BB4BE9 /* DLCustomSlideView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DLCustomSlideView.m; sourceTree = "<group>"; };
 		AE2E162BD3B7AC25DA55A9132746125A /* Pods-JKSegment_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKSegment_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B4D04C434D1A5D01B6838EF4F1EF12D6 /* JKSegment.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = JKSegment.modulemap; sourceTree = "<group>"; };
-		C0DC78BF2334DAFEFD44DE88F873534E /* DLCustomSlideView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DLCustomSlideView.h; sourceTree = "<group>"; };
-		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CFE00B83A6C07B24BB9A0ACA89D2409D /* JKSegment-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JKSegment-umbrella.h"; sourceTree = "<group>"; };
+		D2D6E9FD2152EBA6A364BACCC425F21C /* DLFixedTabbarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DLFixedTabbarView.m; path = JKSegment/DLFixedTabbarView.m; sourceTree = "<group>"; };
 		D3E138279F4B6418B8A8987C80CB28F8 /* Pods-JKSegment_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JKSegment_Tests-umbrella.h"; sourceTree = "<group>"; };
-		E35DE9B02486F26F8878C8A6F1880B1B /* DLTabedSlideView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DLTabedSlideView.m; sourceTree = "<group>"; };
 		E64554299E696534E496A02B594C622D /* Pods_JKSegment_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JKSegment_Tests.framework; path = "Pods-JKSegment_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E96E52FE9ABBDA41FDD58424563D8C68 /* DLCustomSlideView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DLCustomSlideView.h; path = JKSegment/DLCustomSlideView.h; sourceTree = "<group>"; };
 		EDA0A61367B65FCA5AE409E6668E80FF /* JKSegment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JKSegment.framework; path = JKSegment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE19784DAC66F9A34ABA44F8B1335BFC /* Pods-JKSegment_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JKSegment_Tests-resources.sh"; sourceTree = "<group>"; };
-		F2CA870415941747BE71D90D29C9ABC5 /* DLUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DLUtility.m; sourceTree = "<group>"; };
+		EF9D26C4E1153D480C6D1C6A75178DDC /* JKSegment-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JKSegment-dummy.m"; sourceTree = "<group>"; };
+		EFBEB44906FA3295915B45075F0C57B4 /* DLCustomSlideView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DLCustomSlideView.m; path = JKSegment/DLCustomSlideView.m; sourceTree = "<group>"; };
+		F06BE8C69D0FF88DA68FD727DFF66A64 /* DLLRUCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DLLRUCache.h; path = JKSegment/DLLRUCache.h; sourceTree = "<group>"; };
 		F51AD796A2EC159028E7153E4C84CB89 /* Pods-JKSegment_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-JKSegment_Tests.modulemap"; sourceTree = "<group>"; };
-		FC9BAD78CAC69B0A660D4D4CDF8E0B51 /* DLFixedTabbarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DLFixedTabbarView.m; sourceTree = "<group>"; };
-		FEC4D17F00F63707086F279B416D7C9D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FABC8E9A1DF27F3C6D5D66F06D223948 /* DLSlideView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DLSlideView.h; path = JKSegment/DLSlideView.h; sourceTree = "<group>"; };
+		FEB8D1B033B0F2EC0AE36CF0D0B57A15 /* DLTabedSlideView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DLTabedSlideView.m; path = JKSegment/DLTabedSlideView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68BDB0DD2D71189293EABBE99FEB2CE3 /* Foundation.framework in Frameworks */,
+				C355BBAF901BC9C97B0D611EC8A69F3B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B839B19CF70ECCB0C99586F0DF64700A /* Foundation.framework in Frameworks */,
+				37DA71BF93AF5867D42C839A218CC7CE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,58 +120,45 @@
 			path = "Target Support Files/Pods-JKSegment_Tests";
 			sourceTree = "<group>";
 		};
-		556B3738453FB691C4A1EB45A786D0A7 /* JKSegment */ = {
+		59E1F5CD9451CD124AF768FA87E6B279 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4BF9EDB3B6B20F2A4B7A13D91B80A299 /* DLCacheProtocol.h */,
-				C0DC78BF2334DAFEFD44DE88F873534E /* DLCustomSlideView.h */,
-				A5A069DEF9BAB8D698847DA591BB4BE9 /* DLCustomSlideView.m */,
-				02952D751FECB16691DFF8F78C4534BF /* DLFixedTabbarView.h */,
-				FC9BAD78CAC69B0A660D4D4CDF8E0B51 /* DLFixedTabbarView.m */,
-				6C765585648BE03EE0DD9BA25810B1ED /* DLLRUCache.h */,
-				2CF7678A024C7E8C938A812C66CF3733 /* DLLRUCache.m */,
-				7802CB27E3C7CA6A9C3F4E21F3ABA984 /* DLScrollTabbarView.h */,
-				73BE6AD9A2931B8AAB1656C8CB1FD1DB /* DLScrollTabbarView.m */,
-				799782EE085CEEFCA67197C9A31F2273 /* DLSlideTabbarProtocol.h */,
-				1DA5473B07A28EB9745E2D663601800F /* DLSlideView.h */,
-				65BA438DB6DEE392F629F1F61885060A /* DLSlideView.m */,
-				47CA3C61AF608C8A07A1BAE0EB020BC6 /* DLTabedSlideView.h */,
-				E35DE9B02486F26F8878C8A6F1880B1B /* DLTabedSlideView.m */,
-				8542D9056512015D9CC7BE22B27DC172 /* DLUtility.h */,
-				F2CA870415941747BE71D90D29C9ABC5 /* DLUtility.m */,
-				0F50F5716AB62DD1910FFD7D3B9DE04F /* JKExample.h */,
+				70CE59FB5FBBC847A321B03EF6E5B007 /* JKSegment */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		70CE59FB5FBBC847A321B03EF6E5B007 /* JKSegment */ = {
+			isa = PBXGroup;
+			children = (
+				9F6FF0814192E5E9E4AA3EB29B9A18E7 /* DLCacheProtocol.h */,
+				E96E52FE9ABBDA41FDD58424563D8C68 /* DLCustomSlideView.h */,
+				EFBEB44906FA3295915B45075F0C57B4 /* DLCustomSlideView.m */,
+				170D99BD53D88FB5B679D23A952C5EEE /* DLFixedTabbarView.h */,
+				D2D6E9FD2152EBA6A364BACCC425F21C /* DLFixedTabbarView.m */,
+				F06BE8C69D0FF88DA68FD727DFF66A64 /* DLLRUCache.h */,
+				703D6CE19324B95854C6609B721413C9 /* DLLRUCache.m */,
+				A49022247F0F633938822AA3709ACD77 /* DLScrollTabbarView.h */,
+				1292D8FC395E74394D0A21E39E7D4D4D /* DLScrollTabbarView.m */,
+				731116DF72C320A05FA987173BFE3D12 /* DLSlideTabbarProtocol.h */,
+				FABC8E9A1DF27F3C6D5D66F06D223948 /* DLSlideView.h */,
+				3FF55DF455B6FCA09FF9390A1A28775F /* DLSlideView.m */,
+				605056E7F9F55E0326398519A352D522 /* DLTabedSlideView.h */,
+				FEB8D1B033B0F2EC0AE36CF0D0B57A15 /* DLTabedSlideView.m */,
+				4C1477EA110180196C294930C0898F5D /* DLUtility.h */,
+				5875C4D239CC8C3B4E853BDC471733A2 /* DLUtility.m */,
+				4A1931673AAEE78ABBFC6A6C900B595E /* JKExample.h */,
+				AFACE82BB188B21740A586770C3E9DC5 /* Support Files */,
 			);
 			name = JKSegment;
-			path = JKSegment;
-			sourceTree = "<group>";
-		};
-		6C463C4A87F18D4848D4DD797D016548 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				FEC4D17F00F63707086F279B416D7C9D /* Info.plist */,
-				B4D04C434D1A5D01B6838EF4F1EF12D6 /* JKSegment.modulemap */,
-				6E87B717E3F375F8A0A099D098690115 /* JKSegment.xcconfig */,
-				52762EB163648277686C2108976DD9E1 /* JKSegment-dummy.m */,
-				6831C4869AC5AEBDE9734273E4926661 /* JKSegment-prefix.pch */,
-				16566EAF46DE8ADEC92F32EB89AA9706 /* JKSegment-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/JKSegment";
-			sourceTree = "<group>";
-		};
-		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
-			);
-			name = iOS;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				9E749139EF38B6520DB906C0E51530F5 /* Development Pods */,
+				59E1F5CD9451CD124AF768FA87E6B279 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				8A0F5DEFC5C1B5C8EF92B4EFA4EF899F /* Products */,
 				F0E462CC49DB39FE04892E48E5D0D71A /* Targets Support Files */,
@@ -187,30 +174,34 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9E749139EF38B6520DB906C0E51530F5 /* Development Pods */ = {
+		AFACE82BB188B21740A586770C3E9DC5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CEF1C9D6977DC2C1B668913C563F9893 /* JKSegment */,
+				0A89E5E90DD24A7891B66A74B39D2903 /* Info.plist */,
+				2EF83303801F06E43AFCF920B49CFAC5 /* JKSegment.modulemap */,
+				8027FF36E36B396D74998605A6579D0B /* JKSegment.xcconfig */,
+				EF9D26C4E1153D480C6D1C6A75178DDC /* JKSegment-dummy.m */,
+				7BBF312551CC2156D464AFDCE2D1B21D /* JKSegment-prefix.pch */,
+				CFE00B83A6C07B24BB9A0ACA89D2409D /* JKSegment-umbrella.h */,
 			);
-			name = "Development Pods";
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/JKSegment";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CEF1C9D6977DC2C1B668913C563F9893 /* JKSegment */ = {
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				556B3738453FB691C4A1EB45A786D0A7 /* JKSegment */,
-				6C463C4A87F18D4848D4DD797D016548 /* Support Files */,
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
 			);
-			name = JKSegment;
-			path = ../..;
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		F0E462CC49DB39FE04892E48E5D0D71A /* Targets Support Files */ = {
@@ -232,21 +223,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9716561F2F0F0FE49DC946C0F5B31531 /* Headers */ = {
+		BBF27787FB56540F36272372BCD30182 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A35F10B8F97AF1D84315332C4E7C4A26 /* DLCacheProtocol.h in Headers */,
-				76F9F737C66B2438463A6E60830AACC9 /* DLCustomSlideView.h in Headers */,
-				AB30398F29CF18AC14497672C4417D7D /* DLFixedTabbarView.h in Headers */,
-				9B0B4A7C831F3A68B80F5FFD01CB5C92 /* DLLRUCache.h in Headers */,
-				AEDCBA46F152B991EA48EF56E2C63A8A /* DLScrollTabbarView.h in Headers */,
-				BBC1F79393E151DBB0FC96EF9A04D677 /* DLSlideTabbarProtocol.h in Headers */,
-				C329900843DA0A2C2A1A3D8E5931FD28 /* DLSlideView.h in Headers */,
-				4464DDE7DA4EF1556976FF1EF560509D /* DLTabedSlideView.h in Headers */,
-				E1E949B462DCE18F6ACB0E5C18FCFE6E /* DLUtility.h in Headers */,
-				1814C5733EA5C1184CE5B4EA10160E15 /* JKExample.h in Headers */,
-				E39366957BB83DB1B45F268645AFC7D5 /* JKSegment-umbrella.h in Headers */,
+				854027BCB231FC6BFA3A948095E538C1 /* DLCacheProtocol.h in Headers */,
+				FDEDA32578F876EEBB5496DE08171307 /* DLCustomSlideView.h in Headers */,
+				481D50901CC7ED7C66F3BECBC5F92F63 /* DLFixedTabbarView.h in Headers */,
+				BC60E7132E716E11C84222851E210D77 /* DLLRUCache.h in Headers */,
+				A5F2EA0B338B376AB1DF18FCFA7DC551 /* DLScrollTabbarView.h in Headers */,
+				DC7B23BFEE4A222455FBD621010984B3 /* DLSlideTabbarProtocol.h in Headers */,
+				0F1A74F905D0161A47F00A802CA0B093 /* DLSlideView.h in Headers */,
+				DA234012DE2655AD71FF70E8444AA1E3 /* DLTabedSlideView.h in Headers */,
+				1D8BC43969B2D7EEA1654C7699F1F600 /* DLUtility.h in Headers */,
+				F4723E9A4576BE15061723EEC2A6E9BE /* JKExample.h in Headers */,
+				45BD49C229564D869DFEF7890958EC20 /* JKSegment-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,9 +266,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4560A5DBA63E519F570CA4D33DD8FD00 /* Build configuration list for PBXNativeTarget "JKSegment" */;
 			buildPhases = (
-				AB85C7BF028F0C1F4ED1848C08072172 /* Sources */,
+				7F011DD62CCD1C0C0EB580DA1D77467C /* Sources */,
 				26E1FFA53B8B9B1B9FD35F8DDFA43D66 /* Frameworks */,
-				9716561F2F0F0FE49DC946C0F5B31531 /* Headers */,
+				BBF27787FB56540F36272372BCD30182 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -294,7 +285,7 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -324,18 +315,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB85C7BF028F0C1F4ED1848C08072172 /* Sources */ = {
+		7F011DD62CCD1C0C0EB580DA1D77467C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B57AE5A070CA59D1141B7EC5BB8201A /* DLCustomSlideView.m in Sources */,
-				D366E3D7B3E13DC1C2ED12822EB857D7 /* DLFixedTabbarView.m in Sources */,
-				021EF2F4401A1C38D113E84BA6D9EDFD /* DLLRUCache.m in Sources */,
-				2F6EA3090592D9FDFB1CB6BCC4418EB5 /* DLScrollTabbarView.m in Sources */,
-				6AEAFE8194C3DE13B6E739E04E5F5640 /* DLSlideView.m in Sources */,
-				DB54F98CAC599ACAD35BC2770BAD62EB /* DLTabedSlideView.m in Sources */,
-				AF155A8D1BCC4C1290BA419F6F3F6DF9 /* DLUtility.m in Sources */,
-				5EBF15344574819051B13FCCB383176B /* JKSegment-dummy.m in Sources */,
+				66D012B57FBD10BB302D1E605EAFFCF3 /* DLCustomSlideView.m in Sources */,
+				75A0E0122EF66EFCCEF56E574FDAE3CD /* DLFixedTabbarView.m in Sources */,
+				904F0C1F1DB8A564E0449815C21CCB89 /* DLLRUCache.m in Sources */,
+				27CB9783646A2630AE98FA25F38526D7 /* DLScrollTabbarView.m in Sources */,
+				0DC9A018A94867837FAC7A13D7046B26 /* DLSlideView.m in Sources */,
+				799338DD4AF933FF53241E3115FCB799 /* DLTabedSlideView.m in Sources */,
+				FDCAB218E94BDE0FED0D6AD718824131 /* DLUtility.m in Sources */,
+				A173E64683D700D57B76E7D0158C6DFC /* JKSegment-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,10 +342,11 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		70303E6FCF81C2723E7C0B58DF6A2D89 /* Debug */ = {
+		1CC7D1CAC427F8A6E52C4F59C76027F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AE2E162BD3B7AC25DA55A9132746125A /* Pods-JKSegment_Tests.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -386,11 +378,81 @@
 			};
 			name = Debug;
 		};
-		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
+		2E772A48E910CDCF6174058131580DF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A67CE2C26E7145787ACAEB59C29F5AE /* Pods-JKSegment_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-JKSegment_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JKSegment_Tests/Pods-JKSegment_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_JKSegment_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		52DF36D3F332A967119A43AFD26FD2C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8027FF36E36B396D74998605A6579D0B /* JKSegment.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JKSegment/JKSegment-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JKSegment/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JKSegment/JKSegment.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = JKSegment;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		717E77604BFBB04BEAF56608A1CB2EDE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -398,10 +460,13 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
@@ -426,11 +491,12 @@
 			};
 			name = Release;
 		};
-		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
+		A6A03C9B1314C05BD3C2FBD3F65EDF83 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -438,10 +504,13 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
@@ -466,14 +535,16 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		A23C2527ABD7D43520FF72746A771567 /* Debug */ = {
+		F9F55388A1263E2A9A5BAC132B14F014 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E87B717E3F375F8A0A099D098690115 /* JKSegment.xcconfig */;
+			baseConfigurationReference = 8027FF36E36B396D74998605A6579D0B /* JKSegment.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -495,77 +566,12 @@
 				PRODUCT_NAME = JKSegment;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		D497E999AEF70532B984FBA4CC1BAE59 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E87B717E3F375F8A0A099D098690115 /* JKSegment.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/JKSegment/JKSegment-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/JKSegment/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/JKSegment/JKSegment.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = JKSegment;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		ED09713D0701D9A7B5C14F48C13C49AE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A67CE2C26E7145787ACAEB59C29F5AE /* Pods-JKSegment_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-JKSegment_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-JKSegment_Tests/Pods-JKSegment_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_JKSegment_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -573,8 +579,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
-				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+				A6A03C9B1314C05BD3C2FBD3F65EDF83 /* Debug */,
+				717E77604BFBB04BEAF56608A1CB2EDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -582,8 +588,8 @@
 		4560A5DBA63E519F570CA4D33DD8FD00 /* Build configuration list for PBXNativeTarget "JKSegment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A23C2527ABD7D43520FF72746A771567 /* Debug */,
-				D497E999AEF70532B984FBA4CC1BAE59 /* Release */,
+				F9F55388A1263E2A9A5BAC132B14F014 /* Debug */,
+				52DF36D3F332A967119A43AFD26FD2C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -591,8 +597,8 @@
 		FD9D6ABC47B1FEA76FBBCE585F805FFB /* Build configuration list for PBXNativeTarget "Pods-JKSegment_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				70303E6FCF81C2723E7C0B58DF6A2D89 /* Debug */,
-				ED09713D0701D9A7B5C14F48C13C49AE /* Release */,
+				1CC7D1CAC427F8A6E52C4F59C76027F8 /* Debug */,
+				2E772A48E910CDCF6174058131580DF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
