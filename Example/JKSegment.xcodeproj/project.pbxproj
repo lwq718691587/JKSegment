@@ -151,6 +151,7 @@
 				ORGANIZATIONNAME = liuweiqiang;
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
+						DevelopmentTeam = P5B7HFUY5Z;
 						ProvisioningStyle = Manual;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -339,7 +340,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3FBFA4B64F5F1B547CADDBF3 /* Pods-JKSegment_Tests.debug.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = P5B7HFUY5Z;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
