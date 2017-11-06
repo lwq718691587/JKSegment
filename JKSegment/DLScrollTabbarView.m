@@ -39,6 +39,9 @@
     self.isLineEquelWidth = NO;
     scrollView_ = [[UIScrollView alloc] initWithFrame:self.bounds];
     scrollView_.showsHorizontalScrollIndicator = NO;
+    if(@available(iOS 11.0, *)){
+        scrollView_.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    }
     [self addSubview:scrollView_];
     
     trackView_ = [[UIImageView alloc] initWithFrame:CGRectMake(0, self.bounds.size.height-kTrackViewHeight-1, self.bounds.size.width, kTrackViewHeight)];
