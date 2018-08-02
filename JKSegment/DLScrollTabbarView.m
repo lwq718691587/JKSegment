@@ -24,6 +24,7 @@
     item.title    = title;
     item.subTitle = subTitle;
     item.width    = width;
+    
     return item;
 }
 @end
@@ -37,6 +38,7 @@
 - (void)commonInit{
     _selectedIndex = -1;
     self.isLineEquelWidth = NO;
+    self.constWidth = 0;
     scrollView_ = [[UIScrollView alloc] initWithFrame:self.bounds];
     scrollView_.showsHorizontalScrollIndicator = NO;
     if(@available(iOS 11.0, *)){
@@ -52,7 +54,7 @@
 
 -(void)setTrackViewHeight:(CGFloat )trackViewHeight{
     _trackViewHeight = trackViewHeight;
-
+    
     trackView_.frame = CGRectMake(trackView_.frame.origin.x, trackView_.frame.origin.y, trackView_.frame.size.width, trackViewHeight);
     
 }
@@ -63,7 +65,7 @@
     CGRect frame = trackView_.frame;
     frame.origin.y = bottom - frame.size.height;
     trackView_.frame = frame;
-
+    
 }
 - (id)initWithCoder:(NSCoder *)aDecoder{
     if (self = [super initWithCoder:aDecoder]) {
@@ -114,7 +116,7 @@
 - (void)setTabbarItems:(NSArray *)tabbarItems{
     if (_tabbarItems != tabbarItems) {
         _tabbarItems = tabbarItems;
-
+        
         float height = self.bounds.size.height;
         float x = 0.0f;
         NSInteger i=0;
@@ -143,23 +145,23 @@
             CGRect frame = label.frame;
             frame.size.width = statuseStrSize.width;
             label.frame = frame;
-
             
             
-      
+            
+            
             label.tag = kLabelTagBase+i;
-
+            
             label.frame = CGRectMake((item.width-label.bounds.size.width)/2.0f, (height-label.bounds.size.height)/2.0f, CGRectGetWidth(label.bounds), CGRectGetHeight(label.bounds));
             [backView addSubview:label];
             UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction:)];
             [backView addGestureRecognizer:tap];
-
+            
             [scrollView_ addSubview:backView];
             x += item.width;
             i++;
         }
         scrollView_.contentSize = CGSizeMake(x, height);
-
+        
         [self layoutTabbar];
     }
 }
@@ -173,21 +175,21 @@
 }
 
 - (void)layoutTabbar{
-//    float width = self.bounds.size.width/self.tabbarItems.count;
-//    float height = self.bounds.size.height;
-//    float x = 0.0f;
-//    for (NSInteger i=0; i<self.tabbarItems.count; i++) {
-//        x = i*width;
-//        UILabel *label = (UILabel *)[scrollView_ viewWithTag:kLabelTagBase+i];
-//        UIImageView *imageView = (UIImageView *)[scrollView_ viewWithTag:kImageTagBase+i];
-//        UIImageView *selectedIamgeView = (UIImageView *)[scrollView_ viewWithTag:kSelectedImageTagBase+i];
-//        label.frame = CGRectMake(x + (width-label.bounds.size.width-CGRectGetWidth(imageView.bounds))/2.0f, (height-label.bounds.size.height)/2.0f, CGRectGetWidth(label.bounds), CGRectGetHeight(label.bounds));
-//        imageView.frame = CGRectMake(label.frame.origin.x + label.bounds.size.width+kImageSpacingX, (height-imageView.bounds.size.height)/2.0, CGRectGetWidth(imageView.bounds), CGRectGetHeight(imageView.bounds));
-//        selectedIamgeView.frame = imageView.frame;
-//    }
+    //    float width = self.bounds.size.width/self.tabbarItems.count;
+    //    float height = self.bounds.size.height;
+    //    float x = 0.0f;
+    //    for (NSInteger i=0; i<self.tabbarItems.count; i++) {
+    //        x = i*width;
+    //        UILabel *label = (UILabel *)[scrollView_ viewWithTag:kLabelTagBase+i];
+    //        UIImageView *imageView = (UIImageView *)[scrollView_ viewWithTag:kImageTagBase+i];
+    //        UIImageView *selectedIamgeView = (UIImageView *)[scrollView_ viewWithTag:kSelectedImageTagBase+i];
+    //        label.frame = CGRectMake(x + (width-label.bounds.size.width-CGRectGetWidth(imageView.bounds))/2.0f, (height-label.bounds.size.height)/2.0f, CGRectGetWidth(label.bounds), CGRectGetHeight(label.bounds));
+    //        imageView.frame = CGRectMake(label.frame.origin.x + label.bounds.size.width+kImageSpacingX, (height-imageView.bounds.size.height)/2.0, CGRectGetWidth(imageView.bounds), CGRectGetHeight(imageView.bounds));
+    //        selectedIamgeView.frame = imageView.frame;
+    //    }
     
-//    float trackX = width*self.selectedIndex;
-//    trackView_.frame = CGRectMake(trackX, trackView_.frame.origin.y, width, kTrackViewHeight);
+    //    float trackX = width*self.selectedIndex;
+    //    trackView_.frame = CGRectMake(trackX, trackView_.frame.origin.y, width, kTrackViewHeight);
 }
 
 - (NSInteger)tabbarCount{
@@ -239,36 +241,31 @@
         
         // 计算track view位置和宽度
         CGRect fromRc = [scrollView_ convertRect:fromLabel.bounds fromView:fromLabel];
-        CGFloat fromWidth = fromLabel.frame.size.width;
-        CGFloat fromX = fromRc.origin.x;
+        CGFloat fromWidth = self.constWidth ? self.constWidth : fromLabel.frame.size.width;
+        CGFloat fromX = fromRc.origin.x + (self.constWidth ? (fromRc.size.width - self.constWidth)/2 : 0);
         CGFloat toX;
         CGFloat toWidth;
+        CGRect toRc;
         if (toLabel) {
-            CGRect toRc = [scrollView_ convertRect:toLabel.bounds fromView:toLabel];
-            toWidth = toRc.size.width;
-            toX = toRc.origin.x;
-        }
-        else{
+            toRc = [scrollView_ convertRect:toLabel.bounds fromView:toLabel];
+            toWidth = self.constWidth ? self.constWidth : toRc.size.width ;
+            toX = toRc.origin.x + (self.constWidth ? (toRc.size.width - self.constWidth)/2 : 0);
+        }else{
             toWidth = fromWidth;
             if (toIndex > fromIndex) {
-                toX = fromX + fromWidth;
+                toX = fromX + fromWidth ;
             }
             else{
-                toX = fromX - fromWidth;
+                toX = fromX - fromWidth ;
             }
         }
         
-        CGFloat width = toWidth * percent + fromWidth*(1-percent);
+        CGFloat width = self.constWidth ? self.constWidth : (toWidth * percent + fromWidth*(1-percent));
         
-        CGFloat x = fromX + (toX - fromX)*percent;
+        CGFloat x = fromX + (toX - fromX)*percent ;
         
         trackView_.frame = CGRectMake(x, trackView_.frame.origin.y, width, CGRectGetHeight(trackView_.bounds));
     }
-    
-    
-
-
-    
 }
 
 - (void)setSelectedIndex:(NSInteger)selectedIndex{
@@ -312,32 +309,38 @@
             CGRect rc = selectedView.frame;
             //选中的居中显示
             rc = CGRectMake(CGRectGetMidX(rc) - scrollView_.bounds.size.width/2.0f, rc.origin.y, scrollView_.bounds.size.width, rc.size.height);
-// 滚动左右两格到可见位置
-//            if (selectedIndex > 0) {
-//                UIView *leftView = [scrollView_ viewWithTag:kViewTagBase+selectedIndex-1];
-//                rc = CGRectUnion(rc, leftView.frame);
-//            }
-//            if (selectedIndex < [self tabbarCount]-1) {
-//                UIView *rightView = [scrollView_ viewWithTag:kViewTagBase+selectedIndex+1];
-//                rc = CGRectUnion(rc, rightView.frame);
-//            }
+            // 滚动左右两格到可见位置
+            //            if (selectedIndex > 0) {
+            //                UIView *leftView = [scrollView_ viewWithTag:kViewTagBase+selectedIndex-1];
+            //                rc = CGRectUnion(rc, leftView.frame);
+            //            }
+            //            if (selectedIndex < [self tabbarCount]-1) {
+            //                UIView *rightView = [scrollView_ viewWithTag:kViewTagBase+selectedIndex+1];
+            //                rc = CGRectUnion(rc, rightView.frame);
+            //            }
             [scrollView_ scrollRectToVisible:rc animated:YES];
             
             // track view
             if (self.isLineEquelWidth) {
                 DLScrollTabbarItem *item = (DLScrollTabbarItem *)[self.tabbarItems firstObject];
-                 trackView_.frame = CGRectMake(item.width * selectedIndex, trackView_.frame.origin.y, item.width, CGRectGetHeight(trackView_.bounds));
+                trackView_.frame = CGRectMake(item.width * selectedIndex, trackView_.frame.origin.y, item.width, CGRectGetHeight(trackView_.bounds));
             }else{
                 CGRect trackRc = [scrollView_ convertRect:toLabel.bounds fromView:toLabel];
-                trackView_.frame = CGRectMake(trackRc.origin.x, trackView_.frame.origin.y, trackRc.size.width, CGRectGetHeight(trackView_.bounds));
+                if (self.constWidth) {
+                    trackView_.frame = CGRectMake(trackRc.origin.x + (trackRc.size.width - self.constWidth)/2, trackView_.frame.origin.y, self.constWidth, CGRectGetHeight(trackView_.bounds));
+                }else{
+                    trackView_.frame = CGRectMake(trackRc.origin.x, trackView_.frame.origin.y, trackRc.size.width, CGRectGetHeight(trackView_.bounds));
+                }
+                
+                
             }
-
-
+            
+            
         }
         
-//        float width = self.bounds.size.width/self.tabbarItems.count;
-//        float trackX = width*selectedIndex;
-//        trackView_.frame = CGRectMake(trackX, trackView_.frame.origin.y, CGRectGetWidth(trackView_.bounds), CGRectGetHeight(trackView_.bounds));
+        //        float width = self.bounds.size.width/self.tabbarItems.count;
+        //        float trackX = width*selectedIndex;
+        //        trackView_.frame = CGRectMake(trackX, trackView_.frame.origin.y, CGRectGetWidth(trackView_.bounds), CGRectGetHeight(trackView_.bounds));
         
         _selectedIndex = selectedIndex;
     }
@@ -376,6 +379,5 @@
     
 }
 
-
-
 @end
+

@@ -34,8 +34,10 @@
 @property (nonatomic, strong) UIFont  *tabItemCustomFont;
 @property (nonatomic, strong) UIFont  *tabItemCustomSelectFont;
 
-/// 控制 线的宽度，默认为不等宽 NO
+/// 控制 线的等宽，默认为不等宽 NO
 @property (nonatomic) BOOL isLineEquelWidth;
+//  控制线的宽度 一定。
+@property (assign, nonatomic) CGFloat constWidth;
 
 // DLSlideTabbarProtocol
 @property(nonatomic, assign) NSInteger selectedIndex;
@@ -45,3 +47,4 @@
 - (void)updateTitleWithItem:(DLScrollTabbarItem *)item index:(NSInteger)index;
 
 @end
+
