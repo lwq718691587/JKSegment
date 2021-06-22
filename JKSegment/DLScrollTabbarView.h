@@ -24,6 +24,7 @@
 @property (nonatomic, strong) UIColor *tabItemSelectedColor UI_APPEARANCE_SELECTOR;
 @property (nonatomic, strong) UIFont * tabItemNormalFont;
 @property(nonatomic, strong) UIColor *trackColor UI_APPEARANCE_SELECTOR;
+@property (nonatomic, strong) UIImageView *trackView;
 @property(nonatomic,assign) CGFloat trackViewHeight;
 @property(nonatomic,assign) CGFloat trackViewBottom;
 @property(nonatomic, strong) NSArray *tabbarItems;

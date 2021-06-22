@@ -32,7 +32,6 @@
 
 @implementation DLScrollTabbarView{
     UIScrollView *scrollView_;
-    UIImageView *trackView_;
 }
 
 - (void)commonInit{
@@ -46,25 +45,25 @@
     }
     [self addSubview:scrollView_];
     
-    trackView_ = [[UIImageView alloc] initWithFrame:CGRectMake(0, self.bounds.size.height-kTrackViewHeight-1, self.bounds.size.width, kTrackViewHeight)];
-    [scrollView_ addSubview:trackView_];
-    trackView_.layer.cornerRadius = 2.0f;
+    self.trackView = [[UIImageView alloc] initWithFrame:CGRectMake(0, self.bounds.size.height-kTrackViewHeight-1, self.bounds.size.width, kTrackViewHeight)];
+    [scrollView_ addSubview:self.trackView];
+    self.trackView.layer.cornerRadius = 2.0f;
     
 }
 
 -(void)setTrackViewHeight:(CGFloat )trackViewHeight{
     _trackViewHeight = trackViewHeight;
     
-    trackView_.frame = CGRectMake(trackView_.frame.origin.x, trackView_.frame.origin.y, trackView_.frame.size.width, trackViewHeight);
+    self.trackView.frame = CGRectMake(self.trackView.frame.origin.x, self.trackView.frame.origin.y, self.trackView.frame.size.width, trackViewHeight);
     
 }
 -(void)setTrackViewBottom:(CGFloat)trackViewBottom{
     _trackViewBottom = trackViewBottom;
     
     CGFloat bottom = self.bounds.size.height - kTrackViewHeight-trackViewBottom;
-    CGRect frame = trackView_.frame;
+    CGRect frame = self.trackView.frame;
     frame.origin.y = bottom - frame.size.height;
-    trackView_.frame = frame;
+    self.trackView.frame = frame;
     
 }
 - (id)initWithCoder:(NSCoder *)aDecoder{
@@ -110,7 +109,7 @@
 
 - (void)setTrackColor:(UIColor *)trackColor{
     _trackColor = trackColor;
-    trackView_.backgroundColor = trackColor;
+    self.trackView.backgroundColor = trackColor;
 }
 
 - (void)setTabbarItems:(NSArray *)tabbarItems{
@@ -189,7 +188,7 @@
     //    }
     
     //    float trackX = width*self.selectedIndex;
-    //    trackView_.frame = CGRectMake(trackX, trackView_.frame.origin.y, width, kTrackViewHeight);
+    //    self.trackView.frame = CGRectMake(trackX, self.trackView.frame.origin.y, width, kTrackViewHeight);
 }
 
 - (NSInteger)tabbarCount{
@@ -201,7 +200,7 @@
     if (self.isLineEquelWidth) {
         DLScrollTabbarItem *item = (DLScrollTabbarItem *)[self.tabbarItems firstObject];
         CGFloat x = fromIndex * item.width + item.width * percent * (toIndex - fromIndex);
-        trackView_.frame = CGRectMake(x, trackView_.frame.origin.y, item.width, CGRectGetHeight(trackView_.bounds));
+        self.trackView.frame = CGRectMake(x, self.trackView.frame.origin.y, item.width, CGRectGetHeight(self.trackView.bounds));
     }else{
         UILabel *fromLabel = (UILabel *)[scrollView_ viewWithTag:kLabelTagBase+fromIndex];
         fromLabel.textColor = [DLUtility getColorOfPercent:percent between:self.tabItemNormalColor and:self.tabItemSelectedColor];
@@ -264,7 +263,7 @@
         
         CGFloat x = fromX + (toX - fromX)*percent ;
         
-        trackView_.frame = CGRectMake(x, trackView_.frame.origin.y, width, CGRectGetHeight(trackView_.bounds));
+        self.trackView.frame = CGRectMake(x, self.trackView.frame.origin.y, width, CGRectGetHeight(self.trackView.bounds));
     }
 }
 
@@ -323,13 +322,13 @@
             // track view
             if (self.isLineEquelWidth) {
                 DLScrollTabbarItem *item = (DLScrollTabbarItem *)[self.tabbarItems firstObject];
-                trackView_.frame = CGRectMake(item.width * selectedIndex, trackView_.frame.origin.y, item.width, CGRectGetHeight(trackView_.bounds));
+                self.trackView.frame = CGRectMake(item.width * selectedIndex, self.trackView.frame.origin.y, item.width, CGRectGetHeight(self.trackView.bounds));
             }else{
                 CGRect trackRc = [scrollView_ convertRect:toLabel.bounds fromView:toLabel];
                 if (self.constWidth) {
-                    trackView_.frame = CGRectMake(trackRc.origin.x + (trackRc.size.width - self.constWidth)/2, trackView_.frame.origin.y, self.constWidth, CGRectGetHeight(trackView_.bounds));
+                    self.trackView.frame = CGRectMake(trackRc.origin.x + (trackRc.size.width - self.constWidth)/2, self.trackView.frame.origin.y, self.constWidth, CGRectGetHeight(self.trackView.bounds));
                 }else{
-                    trackView_.frame = CGRectMake(trackRc.origin.x, trackView_.frame.origin.y, trackRc.size.width, CGRectGetHeight(trackView_.bounds));
+                    self.trackView.frame = CGRectMake(trackRc.origin.x, self.trackView.frame.origin.y, trackRc.size.width, CGRectGetHeight(self.trackView.bounds));
                 }
                 
                 
@@ -340,7 +339,7 @@
         
         //        float width = self.bounds.size.width/self.tabbarItems.count;
         //        float trackX = width*selectedIndex;
-        //        trackView_.frame = CGRectMake(trackX, trackView_.frame.origin.y, CGRectGetWidth(trackView_.bounds), CGRectGetHeight(trackView_.bounds));
+        //        self.trackView.frame = CGRectMake(trackX, self.trackView.frame.origin.y, CGRectGetWidth(self.trackView.bounds), CGRectGetHeight(self.trackView.bounds));
         
         _selectedIndex = selectedIndex;
     }
