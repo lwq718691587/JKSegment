@@ -52,7 +52,7 @@
 }
 
 - (void)layoutBarAndSlide{
-    self.tabbar.frame = CGRectMake(0, 0, CGRectGetWidth(self.tabbar.bounds), self.tabbar.frame.size.height);
+    self.tabbar.frame = CGRectMake(self.tabbar.frame.origin.x, self.tabbar.frame.origin.y, CGRectGetWidth(self.tabbar.bounds), self.tabbar.frame.size.height);
     slideView_.frame = CGRectMake(0, self.tabbar.frame.size.height+self.tabbarBottomSpacing, CGRectGetWidth(self.bounds), CGRectGetHeight(self.bounds)-self.tabbar.frame.size.height-self.tabbarBottomSpacing);
 }
 
