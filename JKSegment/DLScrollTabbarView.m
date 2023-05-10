@@ -138,15 +138,17 @@
             label.textAlignment = NSTextAlignmentCenter;
             label.attributedText  = attStr;
             
-            CGSize size = [item.title sizeWithAttributes:@{NSFontAttributeName:self.tabItemNormalFont}];
+            UIFont *sizeFont = self.tabItemNormalFont;
+            if (self.tabItemCustomSelectFont) {
+                sizeFont = self.tabItemCustomSelectFont;
+            }
+            
+            CGSize size = [item.title sizeWithAttributes:@{NSFontAttributeName:sizeFont}];
             CGSize statuseStrSize = CGSizeMake(ceilf(size.width), ceilf(size.height));
             
             CGRect frame = label.frame;
             frame.size.width = statuseStrSize.width;
             label.frame = frame;
-            
-            
-            
             
             label.tag = kLabelTagBase+i;
             
@@ -268,7 +270,7 @@
 }
 
 - (void)setSelectedIndex:(NSInteger)selectedIndex{
-    if (_selectedIndex != selectedIndex) {
+//    if (_selectedIndex != selectedIndex) {
         if (_selectedIndex >= 0) {
             //DLScrollTabbarItem *fromItem = [self.tabbarItems objectAtIndex:_selectedIndex];
             UILabel *fromLabel = (UILabel *)[scrollView_ viewWithTag:kLabelTagBase+_selectedIndex];
@@ -342,7 +344,7 @@
         //        self.trackView.frame = CGRectMake(trackX, self.trackView.frame.origin.y, CGRectGetWidth(self.trackView.bounds), CGRectGetHeight(self.trackView.bounds));
         
         _selectedIndex = selectedIndex;
-    }
+//    }
 }
 
 - (void)tapAction:(UITapGestureRecognizer *)tap{
