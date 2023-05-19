@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JKSegment'
-  s.version          = '1.3.0'
+  s.version          = '1.4.0'
   s.summary          = '多页面滑动控件'
 
   s.homepage         = 'https://github.com/lwq718691587/JKSegment'

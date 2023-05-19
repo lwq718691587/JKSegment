@@ -24,11 +24,21 @@
 
 + (UIFont *)getFontOfPercent:(CGFloat)percent between:(UIFont *)font1 and:(UIFont*)font2{
     
-    CGFloat f1 = font1.pointSize;
-    CGFloat f2 = font2.pointSize;
-    CGFloat fontSize = f1 + (f2 - f1)*percent;
+    if (percent > 0.5) {
+        return font2;
+    } else {
+        return font1;
+    }
     
-    return [UIFont systemFontOfSize:fontSize];
+//    CGFloat f1 = font1.pointSize;
+//    CGFloat f2 = font2.pointSize;
+//    CGFloat fontSize = f1 + (f2 - f1)*percent;
+//
+//    if (percent > 0.5) {
+//        return [font2 fontWithSize:fontSize];
+//    } else {
+//        return [font1 fontWithSize:fontSize];
+//    }
 }
 
 
